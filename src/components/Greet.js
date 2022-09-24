@@ -1,11 +1,11 @@
 import React from 'react'
 
 const Greet = (props) => {
+  const {name, heroName} = props
   return (
     <div>
-        <h1>Functional Components</h1>
-        <h1>Hello {props.name} AKA {props.heroName}</h1>
-        {props.children}
+        <h1>Hello {name} AKA {heroName}</h1>
+        
     </div>
   )
 }
